@@ -1,0 +1,23 @@
+@use "../custom" as *;
+
+.core-features {
+  h4 {
+    color: $yellow-dark;
+  }
+
+  .core-features-content {
+    @include media-breakpoint-up(xl) {
+      padding: 1rem 5rem;
+    }
+  }
+
+  @include media-breakpoint-up(xl) {
+    h2 {
+      font-size: 3rem;
+      font-weight: 600;
+    }
+
+    padding: 8rem 5rem 3rem 5rem;
+    margin: 3rem 5rem;
+  }
+}

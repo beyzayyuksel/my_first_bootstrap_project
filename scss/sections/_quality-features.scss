@@ -1,0 +1,24 @@
+@use '../custom' as *;
+
+.quality-features{
+    h4{
+        color: $yellow-dark;
+    }
+
+    .quality-features-items{
+        margin-bottom: 8rem;
+        span{
+            border-radius: 43%;
+            padding: 2rem;
+            background-color: $primary;
+            position: absolute;
+        }
+
+       
+        
+    }
+
+
+
+}
+

@@ -1,0 +1,67 @@
+@use "../custom" as *;
+
+.pricing-plan {
+    margin-bottom: 6rem;
+    padding: 3rem 1rem;
+
+    h4{
+        color: $yellow-dark;
+    }
+
+  .planning-option {
+    background-color: $gray-200;
+    padding: 0.5rem;
+
+    button {
+      background-color: $gray-200;
+      padding: 1rem;
+      border: none;
+
+      &:active {
+        background-color: white;
+        color: $yellow-dark;
+      }
+
+      &:hover {
+        color: $yellow-dark;
+      }
+    }
+  }
+  .pricing-plan-option {
+    padding: 1rem 2rem;
+    border: 0.25rem;
+    border-radius: 7%;
+    margin-bottom: 5rem;
+
+    h3{
+        color: $primary;
+    }
+    span{
+        color: $yellow-dark;
+    }
+
+    button {
+      padding: 1rem 2.5rem;
+    }
+  }
+
+  &__list {
+    list-style-type: none;
+    display: inline-block;
+    padding-top: 0.5rem;
+    padding-left: 0.5rem;
+    margin-bottom: 0.7rem;
+
+    li {
+      padding: 0.5rem 0;
+      i {
+        margin-right: 0.5rem;
+        color: $primary;
+      }
+    }
+  }
+
+  @include media-breakpoint-up(xl) {
+    
+  }
+}

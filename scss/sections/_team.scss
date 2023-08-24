@@ -1,0 +1,17 @@
+@use '../custom' as*;
+
+.our-team{
+    h4{
+        color: $yellow-dark;
+        padding: 1rem;
+    }
+
+
+    .team-members{
+        margin: 2rem;
+    }
+
+    .team-member{
+        padding: 2rem;
+    }
+}

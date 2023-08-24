@@ -1,0 +1,55 @@
+// @use '../custom' as*;
+@use '../components/mixin' as *;
+
+@import "../custom";
+.menu{
+    @include gradient;
+    .navbar-brand{
+        color: white;
+    }
+
+    .navbar-nav .nav-link {
+        padding:0 1rem;
+        color: $white;
+        text-transform: capitalize;
+        font-weight: 600;
+        &:hover{
+            color: $yellow-dark;
+        }
+    
+    }
+     .dropdown-menu{
+        @include gradient;
+     }
+
+    .dropdown-item{
+        &:hover{
+            background-color: $yellow-dark !important;
+        }
+    }
+
+    @media (max-width: 991px){
+        .sidebar{
+           background: $secondary;
+           
+
+           li{
+            padding-top: 1rem;
+           }
+
+           button{
+            margin-top: 2rem;
+           }
+        }
+
+        .offcanvas-header{
+            button{
+                margin-top: 0;
+            }
+
+           
+
+
+        }
+    }
+}

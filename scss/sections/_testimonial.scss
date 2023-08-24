@@ -1,0 +1,40 @@
+@use "../custom" as *;
+
+.testimonials {
+  background: $primary;
+  color: white;
+  margin: 10rem 0 0 0;
+  padding: 3rem 0;
+
+  h4 {
+    color: $yellow-dark;
+  }
+  h2 {
+    padding: 3rem 0 0 0;
+  }
+
+  &__card {
+    padding: 2rem 1.25rem;
+    border-radius: 0.62rem;
+    margin-bottom: 2rem;
+    background-color: rgba(white, 0.2);
+
+    .rating {
+      list-style-type: none;
+      padding-left: 0;
+      color: $yellow-dark;
+    }
+
+    p {
+      padding: 1rem 0;
+    }
+
+    .client-info {
+      padding: 1rem 0;
+
+      p {
+        padding: 0;
+      }
+    }
+  }
+}

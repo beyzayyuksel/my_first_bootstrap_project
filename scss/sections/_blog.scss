@@ -1,0 +1,41 @@
+@use "../custom" as *;
+
+.blog-section {
+  margin: 10rem 0 0 0;
+
+  .blog-form {
+    margin: 4rem 0;
+    .mail-btn {
+      position: relative;
+
+      input {
+        border-radius: 2rem;
+        padding-left: 2rem !important;
+      }
+
+      button {
+        position: absolute;
+        top: 8%;
+        right: 2.5%;
+        padding: 0.75rem 3rem;
+      }
+    }
+  }
+
+  .blog-ending{
+    i{
+      color: $yellow-dark;
+      font-size: 2.5em;
+    }
+  }
+
+  @include media-breakpoint-up(md) {
+    .blog-form {
+      p {
+        flex: 0 0 auto;
+        width: 33.33333333%;
+        margin-left: 33.33333333%;
+      }
+    }
+  }
+}

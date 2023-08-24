@@ -1,0 +1,35 @@
+@use "../custom" as *;
+
+.functions {
+    background-color: $primary;
+    color: white;
+
+
+    span{
+        border-radius: 43%;
+        padding: 1rem;
+        background-color: white;
+        color: $yellow-dark;
+        font-weight: 600;
+    }
+
+    h4{
+        color: $yellow-dark;
+    }
+
+    .functions-items{
+        @include media-breakpoint-up(xl){
+            margin: 3rem;
+        }
+
+
+        .functions-item{
+            padding: 1rem 2rem;
+
+            h3{
+                padding: 3rem 0 0 0;
+                color: $yellow-dark;
+            }
+        }
+    }
+}

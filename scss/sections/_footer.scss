@@ -1,0 +1,19 @@
+@use "../custom" as *;
+
+.footer {
+  padding: 1rem 0 3rem;
+  background-color: $primary;
+  color: white;
+  margin-top: 8rem;
+
+  .footer-nav {
+    li {
+      list-style-type: none;
+      padding: 0 1rem;
+
+      a {
+        text-decoration: none !important;
+      }
+    }
+  }
+}
